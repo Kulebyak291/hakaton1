@@ -133,7 +133,7 @@ void delExp(vector<Expense>& expenses) {
     for (size_t i = 0; i < expenses.size(); ++i) {
         char buffer[26];
         ctime_s(buffer, sizeof(buffer), &expenses[i].date);
-        cout << i + 1 << ". " << expenses[i].category << " (Сумма: " << expenses[i].sum << ", Описание: " << expenses[i].descrip << ", Дата: " << buffer << ")" << endl;
+        cout << i + 1 << ". " << expenses[i].category << " Сумма: " << expenses[i].sum << ", Описание: " << expenses[i].descrip << ", Дата: " << buffer << "" << endl;
     }
     size_t index;
     cout << "Введите номер расхода, который необходимо удалить: ";
